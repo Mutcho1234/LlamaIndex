@@ -4,10 +4,10 @@ This script demonstrates how to use the llama_index library to create a summariz
 from llama_index.core import SummaryIndex, SimpleDirectoryReader
 
 # Define constants
-DIR_PATH = r"C:\Users\mutch\source\repos\python-control"
+DOCUMENTS_DIRECTORY = r"C:\Users\mutch\source\repos\python-control"
 
 # Load the documents from the directory
-documents = SimpleDirectoryReader(DIR_PATH).load_data()
+documents = SimpleDirectoryReader(DOCUMENTS_DIRECTORY).load_data()
 
 # Create an index from the documents
 index = SummaryIndex.from_documents(documents)
